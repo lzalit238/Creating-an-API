@@ -6,7 +6,7 @@ const { programs } = require('./data');
 app.use(express.static('./public'))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '/index.html'))
+    res.sendFile(path.resolve(__dirname, './index.html'))
 })
 
 app.get('/api/programs', (req, res) => {
